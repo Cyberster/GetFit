@@ -9,6 +9,10 @@
 <br><br>
 #### Team Members
 <br>
+| Attempt | #1 | #2 |
+| :---: | :---: | :---: |
+| Seconds | 301 | 283 |
+
 | | Team Member #1 | Team Member #2 | Team Member #3 | Team Member #4 |
 | :--- | :--- | :--- | :--- | :--- |
 | Name | Arpan Das | Ankan Biswas | Gopa Samanta | Avik Biswas |
