@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.w3epic.getfit.Activities.BodyFatPercentageLogActivity"
+    android:padding="16dp"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/tvBodyFatPercentageLogState"
+        android:text="10.0%"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="64sp"
+        android:gravity="center"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btnDelBodyFatPercentage"
+            android:text="-"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="64sp"
+            android:layout_gravity="center_vertical"
+            android:onClick="btnDelBodyFatPercentageOnClickHandler"/>
+
+        <EditText
+            android:id="@+id/etCurrentBodyFatPercentage"
+            android:hint="10.0"
+            android:text="10.0"
+            android:textSize="64sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"/>
+
+        <Button
+            android:id="@+id/btnAddBodyFatPercentage"
+            android:text="+"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="64sp"
+            android:layout_gravity="center_vertical"
+            android:onClick="btnAddBodyFatPercentageOnClickHandler"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvTargetWeight"
+        android:text="Target body fat percentage 7%"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        android:gravity="center"
+        android:padding="16dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnAddBodyFatPercentageToLog"
+            android:text="Add to log"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="btnAddBodyFatPercentageToLogOnClickHandler"/>
+        <Button
+            android:id="@+id/btnCalculateBodyFatPercentage"
+            android:text="Calculate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="btnCalculateBodyFatPercentageOnClickHandler"/>
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

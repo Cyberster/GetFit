@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.w3epic.getfit">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Activities.HomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Activities.SearchFoodActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.w3epic.getfit.Activities.FoodLogActivity" />
+        </activity>
+        <activity android:name=".Activities.WorkoutLogActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.w3epic.getfit.Activities.HomeActivity" />
+        </activity>
+        <activity android:name=".Activities.FoodLogActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.w3epic.getfit.Activities.HomeActivity" />
+        </activity>
+        <activity android:name=".Activities.FoodInformationActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.w3epic.getfit.Activities.SearchFoodActivity" />
+        </activity>
+        <activity android:name=".Activities.WorkoutInformationActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.w3epic.getfit.Activities.SearchFoodActivity" />
+        </activity>
+        <activity android:name=".Activities.SearchWorkoutActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.w3epic.getfit.Activities.WeightLogActivity" />
+        </activity>
+        <activity android:name=".Activities.WaterLogActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.w3epic.getfit.Activities.HomeActivity" />
+        </activity>
+        <activity android:name=".Activities.WeightLogActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.w3epic.getfit.Activities.HomeActivity" />
+        </activity>
+        <activity android:name=".Activities.BodyFatPercentageLogActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.w3epic.getfit.Activities.HomeActivity" />
+        </activity>
+        <activity android:name=".Activities.ContactUsActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.w3epic.getfit.Activities.HomeActivity" />
+        </activity>
+        <activity android:name=".Activities.AboutUsActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.w3epic.getfit.Activities.HomeActivity" />
+        </activity>
+        <activity
+            android:name=".Activities.SettingsActivity"
+            android:label="Settings"
+            android:parentActivityName=".Activities.HomeActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.w3epic.getfit.Activities.HomeActivity" />
+        </activity>
+        <activity android:name=".Activities.LoginActivity" />
+        <activity android:name=".Activities.RegisterActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.w3epic.getfit.Activities.LoginActivity" />
+        </activity>
+        <activity android:name=".Activities.ProfileActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.w3epic.getfit.Activities.HomeActivity" />
+        </activity>
+        <activity android:name=".Activities.HealthToolsActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.w3epic.getfit.Activities.HomeActivity" />
+        </activity>
+        <activity android:name=".Activities.StepCountLogActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.w3epic.getfit.Activities.HomeActivity" />
+        </activity>
+
+        <service
+            android:name=".Services.StepCountService"
+            android:enabled="true"
+            android:exported="false" />
+        <service
+            android:name=".Services.SyncService"
+            android:enabled="true"
+            android:exported="true"></service>
+    </application>
+
+</manifest>

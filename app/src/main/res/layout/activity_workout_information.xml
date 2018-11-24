@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.w3epic.getfit.Activities.WorkoutInformationActivity"
+    android:padding="16dp"
+    android:background="@drawable/bmi">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:text="Workout Title"
+        android:textSize="32sp"
+        android:gravity="center_horizontal" />
+
+    <!--android:id="@+id/youtube_web_view"-->
+    <WebView
+        android:id="@+id/wvWorkoutVideo"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@+id/tvTitle"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/wvWorkoutVideo">
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvDurationLabel"
+        android:text="Duration (min)"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/wvWorkoutVideo"
+        android:layout_marginHorizontal="16dp"/>
+    <NumberPicker
+        android:id="@+id/npDuration"
+        android:layout_width="90dp"
+        android:layout_height="64dp"
+        android:layout_below="@+id/tvDurationLabel"
+        android:descendantFocusability="blocksDescendants"
+        android:layout_marginHorizontal="16dp"/>
+
+    <TextView
+        android:id="@+id/tvRepetationLabel"
+        android:text="Repetation"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/wvWorkoutVideo"
+        android:layout_toRightOf="@+id/tvDurationLabel"
+        android:layout_marginHorizontal="16dp"/>
+    <NumberPicker
+        android:id="@+id/npRepetation"
+        android:layout_width="90dp"
+        android:layout_height="64dp"
+        android:layout_below="@+id/tvDurationLabel"
+        android:layout_toRightOf="@+id/npDuration"
+        android:descendantFocusability="blocksDescendants"
+        android:layout_marginHorizontal="16dp"/>
+
+    <TextView
+        android:id="@+id/tvSetLabel"
+        android:text="Set"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/wvWorkoutVideo"
+        android:layout_toRightOf="@+id/tvRepetationLabel"
+        android:layout_marginHorizontal="16dp"/>
+    <NumberPicker
+        android:id="@+id/npSet"
+        android:layout_width="90dp"
+        android:layout_height="64dp"
+        android:layout_below="@+id/tvDurationLabel"
+        android:layout_toRightOf="@+id/npRepetation"
+        android:descendantFocusability="blocksDescendants"
+        android:layout_marginHorizontal="16dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/npSet"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvCaloriesBurnt"
+            android:text="x kcal burnt"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textSize="32sp"
+            android:padding="15dp"
+            android:background="@drawable/workout_details"/>
+
+        <TextView
+            android:id="@+id/tvMet"
+            android:text="MET: 9.3"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.5"
+            android:gravity="center"
+            android:textSize="24sp"
+            android:padding="15dp"
+            android:background="@drawable/workout_details"/>
+
+        <Button
+            android:id="@+id/btnAddWorkoutToLog"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/addwork_btn"
+            android:onClick="btnAddWorkoutToLogOnClickHandler"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

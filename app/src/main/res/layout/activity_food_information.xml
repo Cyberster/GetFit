@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.w3epic.getfit.Activities.FoodInformationActivity"
+    android:padding="16dp"
+    android:background="@drawable/bmi">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:text="Food Title"
+        android:textSize="32sp"
+        android:gravity="center_horizontal"/>
+
+    <ImageView
+        android:id="@+id/ivFoodImageFull"
+        android:layout_width="128dp"
+        android:layout_height="128dp"
+        android:layout_below="@+id/tvTitle"
+        android:layout_centerHorizontal="true"
+      android:background="@drawable/food_log_icon"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ivFoodImageFull">
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tvDurationLabel"
+        android:text="Serving"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ivFoodImageFull"
+        android:layout_marginHorizontal="16dp"/>
+    <NumberPicker
+        android:id="@+id/npDuration"
+        android:layout_width="90dp"
+        android:layout_height="64dp"
+        android:layout_below="@+id/tvDurationLabel"
+        android:descendantFocusability="blocksDescendants"
+        android:layout_marginHorizontal="16dp"/>
+
+    <TextView
+        android:id="@+id/tvRepetationLabel"
+        android:text="Quantity"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ivFoodImageFull"
+        android:layout_toRightOf="@+id/tvDurationLabel"
+        android:layout_marginHorizontal="16dp"/>
+    <NumberPicker
+        android:id="@+id/npRepetation"
+        android:layout_width="90dp"
+        android:layout_height="64dp"
+        android:layout_below="@+id/tvDurationLabel"
+        android:layout_toRightOf="@+id/npDuration"
+        android:descendantFocusability="blocksDescendants"
+        android:layout_marginHorizontal="16dp"/>
+
+    <TextView
+        android:id="@+id/tvSetLabel"
+        android:text="Unit"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ivFoodImageFull"
+        android:layout_toRightOf="@+id/tvRepetationLabel"
+        android:layout_marginHorizontal="16dp"/>
+    <NumberPicker
+        android:id="@+id/npSet"
+        android:layout_width="90dp"
+        android:layout_height="64dp"
+        android:layout_below="@+id/tvDurationLabel"
+        android:layout_toRightOf="@+id/npRepetation"
+        android:descendantFocusability="blocksDescendants"
+        android:layout_marginHorizontal="16dp"/>
+
+    <View
+        android:id="@+id/hr3"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"
+        android:layout_below="@+id/npRepetation"
+        android:layout_marginTop="8dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/hr3"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rvFoodInfo"
+            android:scrollbars="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4"
+            android:background="@drawable/nutrition"/>
+        <View
+            android:id="@+id/hr4"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"
+            android:layout_below="@+id/npRepetation"
+            android:layout_marginBottom="8dp"/>
+
+        <Button
+            android:id="@+id/btnAddWorkoutToLog"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/add_btn"
+            android:onClick="btnAddFoodToLogOnClickHandler" />
+
+    </LinearLayout>
+
+</RelativeLayout>

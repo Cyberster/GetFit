@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.w3epic.getfit.Activities.FoodLogActivity"
+    android:padding="16dp"
+    android:background="@drawable/bmi">
+
+    <Button
+        android:id="@+id/btnAddFood"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/addfood_btn"
+        android:onClick="btnAddFoodOnClickHandler" />
+
+    <LinearLayout
+        android:id="@+id/llLabelAndLoading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnAddFood"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/tvTodaysHistory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Today's history: "/>
+        <TextView
+            android:id="@+id/tvLoading"
+            android:text="Loading placeholder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity=""/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llFoodLog"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/llLabelAndLoading">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rvFoodSearchResults"
+            android:scrollbars="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/log_food"/>
+    </LinearLayout>
+
+
+</RelativeLayout>

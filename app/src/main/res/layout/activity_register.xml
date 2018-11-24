@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.w3epic.getfit.Activities.RegisterActivity"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/sign_in_main">
+
+    <ImageView
+        android:layout_width="222dp"
+        android:layout_height="192dp"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:background="@drawable/icon_text"
+        android:padding="16dp" />
+
+
+    <LinearLayout
+        android:layout_width="340dp"
+        android:layout_height="183dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="154dp"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/email"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:paddingLeft="50dp" />
+
+        <EditText
+            android:id="@+id/etPass"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/password"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:paddingLeft="50dp" />
+
+        <EditText
+            android:id="@+id/etConfPass"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/password"
+            android:hint="Confirm password"
+            android:inputType="textPassword"
+            android:paddingLeft="50dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="222dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="24dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:background="@drawable/signup_btn"
+            android:onClick="btnRegisterOnClick" />
+
+        <Button
+            android:layout_width="118dp"
+            android:layout_height="35dp"
+            android:background="@drawable/sign_in"
+            android:onClick="btnLoginOnClick" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

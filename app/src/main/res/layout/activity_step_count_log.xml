@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.StepCountLogActivity"
+    android:padding="16dp"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/bmi">
+
+    <TextView
+        android:id="@+id/tvStepCountLog1"
+        android:text="5000 out of 10000 steps"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="@drawable/step_target"
+        android:padding="10dp"/>
+
+    <View
+        android:id="@+id/hr1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"
+        android:layout_below="@+id/tvTitle"
+        android:layout_marginVertical="16dp"/>
+
+    <TextView
+        android:id="@+id/tvStepCountLog2"
+        android:text="Need to walk 5000 more steps today!"
+        android:textSize="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="@drawable/next_step"
+        android:padding="15dp"/>
+
+
+</LinearLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.WorkoutLogActivity"
+    android:padding="16dp"
+    android:background="@drawable/bmi">
+
+    <Button
+        android:id="@+id/btnAddWorkout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/addwork_btn"
+        android:gravity="center"
+        android:onClick="btnAddWorkoutOnClickHandler" />
+
+    <TextView
+        android:id="@+id/tvTodaysHistory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Today's history: "
+        android:layout_below="@id/btnAddWorkout"/>
+
+    <TextView
+        android:id="@+id/tvLoading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="### kcal burnt today"
+        android:layout_below="@id/btnAddWorkout"
+        android:layout_toRightOf="@+id/tvTodaysHistory"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvWorkoutSearchResults"
+        android:scrollbars="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tvTodaysHistory"
+        android:background="@drawable/log_work"/>
+
+</RelativeLayout>

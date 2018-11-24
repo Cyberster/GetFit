@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".Activities.HomeActivity"
+    android:gravity="center"
+    android:background="@drawable/bmi">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp">
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="128dp"
+            android:onClick="btnFoodLogOnClickHandler"
+            android:layout_marginHorizontal="8dp"
+            android:background="@drawable/food_log"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="128dp"
+            android:onClick="btnWorkoutOnClickHandler"
+            android:background="@drawable/workout_log"
+            android:layout_marginHorizontal="8dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp">
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="128dp"
+            android:onClick="btnWaterLogOnClickHandler"
+            android:background="@drawable/water_log"
+            android:layout_marginHorizontal="8dp" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="128dp"
+            android:onClick="btnWeightLogOnClickHandler"
+            android:background="@drawable/weight_log"
+            android:layout_marginHorizontal="8dp"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp">
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="128dp"
+            android:onClick="btnBodyFatPercentageLogOnClickHandler"
+            android:background="@drawable/fat_log"
+            android:layout_marginHorizontal="8dp"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="128dp"
+            android:onClick="btnStepCountLogOnClickHandler"
+            android:background="@drawable/foot_step"
+            android:layout_marginHorizontal="8dp"/>
+    </LinearLayout>
+
+</LinearLayout>

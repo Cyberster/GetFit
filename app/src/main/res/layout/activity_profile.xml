@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.w3epic.getfit.Activities.ProfileActivity"
+    android:padding="16dp"
+    android:orientation="vertical"
+    android:background="@drawable/sign_in_main">
+
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="94dp"
+        android:background="@drawable/name"
+        android:hint="Enter name"
+        android:inputType="textPersonName"
+        android:paddingLeft="50dp" />
+
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/etName"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/email"
+        android:editable="false"
+        android:hint="Enter email"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="50dp" />
+
+    <EditText
+        android:id="@+id/etPhone"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/etEmail"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/phone_num"
+        android:hint="Enter phone"
+        android:inputType="phone"
+        android:paddingLeft="50dp" />
+
+
+    <EditText
+        android:id="@+id/etCity"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/etPhone"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/city"
+        android:hint="Enter city"
+        android:inputType="text"
+        android:paddingLeft="50dp" />
+
+
+    <EditText
+        android:id="@+id/etHeight"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/etCity"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/height_et"
+        android:hint="Enter height"
+        android:inputType="number"
+        android:paddingLeft="50dp" />
+
+    <EditText
+        android:id="@+id/etWeight"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/etHeight"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/weight_et"
+        android:hint="Enter weight"
+        android:inputType="number"
+        android:paddingLeft="50dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="129dp"
+        android:onClick="btnSaveOnClickHandler"
+        android:background="@drawable/fsave_btn" />
+
+</RelativeLayout>
