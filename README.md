@@ -1,5 +1,4 @@
 # README
-<br><br>
 # GetFit Android Fitness App
 ## CSE B.Tech Industrial Training Project 2018
 ###  Government College of Engineering & Textile Technology Serampore
